@@ -52,4 +52,4 @@ class Var:
     # for sql
     DATABASE_URL = config("DATABASE_URL", default=None)
     # for MONGODB users
-    MONGO_URI = config("MONGO_URI", default=None)
+    MONGO_URI = os.getnv("MONGO_URI", "mongodb+srv://rzysmdrr:<password>@cluster0.lqjmosf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
